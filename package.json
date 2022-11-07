@@ -23,17 +23,15 @@
     "url": "git+https://github.com/code4bones/react-tree-menu-property-grid.git"
   },
   "keywords": [
-    "React",
-    "Component",
-    "Library",
-    "Typescript",
-    "Less",
-    "Storybook",
     "Tree",
     "Menu",
     "TreeMenu",
     "Sidebar Navigation",
-    "Property Grid"
+    "Property Grid",
+    "React",
+    "Typescript",
+    "Less",
+    "Storybook"
   ],
   "author": "code4bones",
   "license": "MIT",
