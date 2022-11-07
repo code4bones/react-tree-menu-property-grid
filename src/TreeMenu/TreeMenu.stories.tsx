@@ -32,7 +32,9 @@ const Badge : React.FC<MarkerProps> = ({ color }) => {
 			display:"flex",
 			justifyContent:"center",
 			alignItems:"center",
+			alignSelf:"flex-start",
 			borderRadius:10,
+			width:100,
 			backgroundColor:color || "red",
 			color:"yellow",
 			fontSize:13,
@@ -153,6 +155,27 @@ const ITEMS : TreeMenuItem[] = [
 ];
 
 
+const CONTROLS : TreeMenuItem[] = [{
+	id:"ctrls",
+	title:"Some controls",
+	info:"JSX Controls",
+	childs:[
+		{ id:"name",title:"Name",info:"Simple node",control:<input type="text" style={{ width:"100%" }} /> },
+		{ id:"check",title:"Accept",info:"Simple node",control:<input type="checkbox" style={{ width:"100%" }} /> }
+	]
+},{
+	id:"custom",
+	title:"Custom Nodes",
+	info:"Custom controls",
+	infoReveal:"horizontal",
+	childs:[
+		{ id:"item1",title:<Badge color="red" />,info:"Custom title",control:"JSX / String",infoReveal:"horizontal" },
+		{ id:"item2",info:<Badge color="orange" />,title:"Custom info",control:"JSX / String",infoReveal:"vertical" }
+	]
+}
+
+];
+
 const Tree = ({ treeID,items,...rest }:Partial<TreeMenuProps>)  => {
 	const ref = createRef<TreeMenuActions>();
 
@@ -217,7 +240,7 @@ export default {
 			control:{
 				type:"object"
 			},
-			defaultValue:{ color:"red" }
+			defaultValue:{ color:"orange" }
 		},
 		titleStyle:{
 			control:{
@@ -260,9 +283,9 @@ FolderTree.args = {
 	theme:"dark",
 };
 
-export const PropertyGrid = Template.bind({});
+export const PropertyGridCommon = Template.bind({});
 
-PropertyGrid.args = {
+PropertyGridCommon.args = {
 	treeID:"property_grid",
 	groupIconLeft:true,
 	infoReveal:"always",
@@ -270,6 +293,19 @@ PropertyGrid.args = {
 	badgeVisible:true,
 	propertyGrid:true,
 	items:pgtree,
+	theme:"dark",
+};
+
+export const PropertyGridControls = Template.bind({});
+
+PropertyGridControls.args = {
+	treeID:"property_controls",
+	groupIconLeft:true,
+	infoReveal:"always",
+	enableRotate:false,
+	badgeVisible:true,
+	propertyGrid:true,
+	items:CONTROLS,
 	theme:"dark",
 };
 
