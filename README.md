@@ -1,6 +1,6 @@
 ### TreeMenu / PropertyGrid
 
-![npm](https://img.shields.io/npm/v/@code4bones/react-tree-menu-property-grid?label=latest)
+![npm](https://img.shields.io/npm/v/@code4bones/react-tree-menu-property-grid?label=latest)https://img.shields.io/npm/dt/@code4bones/react-tree-menu-property-grid?style=flat-square&label=installs
 
 ### System default / Custom theme 
 
