@@ -1,6 +1,9 @@
 ### TreeMenu / PropertyGrid
 
-### System default / custom theme 
+![npm](https://img.shields.io/npm/v/@code4bones/react-tree-menu-property-grid?label=latest)
+![npm](https://img.shields.io/npm/dt/@code4bones/react-tree-menu-property-grid?style=flat-square&label=installs)
+
+### System default / Custom theme 
 
 ![sample](https://github.com/code4bones/react-c4b-ui/blob/master/img/theme.png?raw=true "sample")
 
@@ -49,18 +52,25 @@ type `RenderType` = `RenderFn` | React.ReactElement;
 
 | Propery name | Description                    | Signature
 | ------------- | ------------------------------ | ---- |
+| `treeID` | tree id | string |
+| `propertyGrid` | property grid mode | boolean |
 | `items[]`      | tree menu items array       | `TreeMenuItem`[] |
 | `ref`      | handle to TreeMenu methods       | `TreeMenuActions` |
-| `onClick`   |  item click handler     | onClick?:(item:TreeMenuItem) => void|
-| `onToggle`   |  collapse  / expand     | onToggle?:(id?:string,collapsed?:boolean) => void;|
 | `initialCollapsed`   |  initial tree state     | boolean |
 | `initialSelected`   |  initial selected item     | item's `id` : string|
+| `theme`   | theme override class name     | `dark`, `light`, custom name | 
+| `classPrefix`   | container global prefix     | string |
+| `enableRotate` | Rotate collapse / expand icon| boolean |
+| `infoStyle` | global custom style | boolean |
+| `titleStyle` | global custom style | boolean |
+| `infoReveal` | global info display modes | "always" | "vertical" | "horizontal" |
+| `badgeVisible` | display badge | boolean |
+| `groupIconLeft` | group icon position | boolean |
+| `onClick`   |  item click handler     | onClick?:(item:TreeMenuItem) => void|
+| `onToggle`   |  collapse  / expand     | onToggle?:(id?:string,collapsed?:boolean) => void;|
 | `renderBadge`   |  item click handler     | `RenderType` |
 | `renderIcon`   |  Left side element of item     | `RenderType` |
 | `renderGroupState`   | Group indicator     | `RenderType` |
-| `theme`   | theme override class name     | `dark`, `light`, custom name | 
-| `classPrefix`   | container global prefix     | string |
-| `enableRotate` | Rotate collapse / expand | boolean |
 
 
 `TreeMenuItem`
@@ -69,6 +79,8 @@ type `RenderType` = `RenderFn` | React.ReactElement;
     id:string;
     title:string | React.ReactElement;
     info?:string | React.ReactElement;
+    badge?:string | React.ReactElement;
+    control?:string | JSX.Element;
     infoReveal?:InfoReveal;
     icon?:React.ReactElement;
     badge?:string | React.ReactElement;
@@ -87,7 +99,8 @@ type `RenderType` = `RenderFn` | React.ReactElement;
     getItem:(id:string) => TreeMenuItem | null;
     collapse:(id:string,collapsed?:boolean) => void;
     select:(id:string) => void;
-
+	  invalidate:() => void;
+	  rebuild:(items:TreeMenuItem[]) => void;
 ```
 
 ### Sample
