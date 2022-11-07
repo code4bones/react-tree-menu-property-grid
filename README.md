@@ -1,6 +1,16 @@
 ### TreeMenu / PropertyGrid
 
+### System default / custom theme 
+
+![sample](https://github.com/code4bones/react-c4b-ui/blob/master/img/theme.png?raw=true "sample")
+
 # react-tree-menu-property-grid
+
+|feature|sample|
+|-------|------|
+|![cap](https://github.com/code4bones/react-tree-menu-property-grid/blob/master/img/controls.gif?raw=true)|  |
+![cap](https://github.com/code4bones/react-tree-menu-property-grid/blob/master/img/folders.gif?raw=true)|![cap](https://github.com/code4bones/react-tree-menu-property-grid/blob/master/img/group-right.gif?raw=true)|
+
 
 # yarn storybook 
 
