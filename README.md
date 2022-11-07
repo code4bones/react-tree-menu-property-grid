@@ -1,38 +1,9 @@
-### React Component Library - code4bones react UI
+### TreeMenu / PropertyGrid
 
-### Components
-	
-|   Component| Description   |
-| ------------ | ------------ |
-|  TreeMenu | Navigation Menu Tree   |
+# react-tree-menu-property-grid
 
+# yarn storybook 
 
-# react-c4b-ui
-
-![npm](https://img.shields.io/npm/v/@code4bones/react-c4b-ui?label=latest)
-![npm](https://img.shields.io/npm/dt/@code4bones/react-c4b-ui?style=flat-square&label=installs)
-
-![](https://img.shields.io/github/downloads/code4bones/react-c4b-ui/total) ![](https://img.shields.io/github/watchers/code4bones/react-c4b-ui) ![](https://img.shields.io/github/forks/code4bones/react-c4b-ui)  ![](https://img.shields.io/github/release/code4bones/react-c4b-ui) ![](https://img.shields.io/github/issues/code4bones/react-c4b-ui)
-
-### Links
-
-[Change log](https://github.com/code4bones/react-c4b-ui/wiki/Change-Log "Change log")
-
-### System default / custom theme 
-
-![sample](https://github.com/code4bones/react-c4b-ui/blob/master/img/theme.png?raw=true "sample")
-
-|feature|sample|
-|-------|------|
-|![cap](https://github.com/code4bones/react-c4b-ui/blob/master/img/items_reveal.gif?raw=true)|  |
-![cap](https://github.com/code4bones/react-c4b-ui/blob/master/img/rorate_group.gif?raw=true)|![cap](https://github.com/code4bones/react-c4b-ui/blob/master/img/static_group.gif?raw=true)|
-
-### Install
-
-
-`$ yarn add @code4bones/react-c4b-ui`
-
-#### TreeMenu
 
 #### Brief
 
