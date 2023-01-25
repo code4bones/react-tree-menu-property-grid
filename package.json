@@ -1,6 +1,6 @@
 {
   "name": "@code4bones/react-tree-menu-property-grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -15,7 +15,7 @@
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
